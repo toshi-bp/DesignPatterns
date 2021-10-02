@@ -30,6 +30,12 @@ Iteratorパターンとは, 何かがたくさん集まっている時に, そ�
 # Iteratorパターンを使う意義
 Iteratorを使うことで ,実装とは切り離して, 数え上げを行うことができる.
 具体的には, 本の管理を配列ではなく, `java.util.Vector`としても, `BookShelf`が`iterator`メソッドを持っている.
+```java
+while (it.hasNext()) {
+        Book book = (Book)it.next();
+        System.out.println(book.getName());
+    }
+```
 
 →**正しい`Iterator`を返してくれれば(`hasNext`と`next`メソッドが正しく実装されているクラスのインスタンスを返してくれば), `while`ループを全く変更しなくても動作する**
 
