@@ -18,15 +18,19 @@
 | `Main` | 動作テスト用 | クラス |
 
 # 登場人物
-- `Iterator`
+- `Iterator`(反復子)
     - 要素を順番にスキャンしていくインターフェース(API)を定める役
-- `ConcreteIterator`
+    - サンプルプログラムでは, 
+- `ConcreteIterator`(具体的な反復子)
     - Iterator役が定めたインターフェース(API)を実際に実装する役
-- `Aggregate`
+    - サンプルプログラムでは, 
+- `Aggregate`(集合体)
     - `Iterator`役を作り出すインターフェース(API)を定める役
     - インターフェースは「自身が持っている要素を順番にスキャンしてくれる人」を作り出すメソッドということになる
-- `ConcreteAggregate`
+    - サンプルプログラムでは, 
+- `ConcreteAggregate`(具体的な集合体)
     - `Aggregate`役が定めたインターフェース(API)を実際に実装する役. 具体的な`Iterator`役(→`ConcreteIterator`役)のインスタンスを作り出す.
+    - サンプルプログラムでは
 
 # Iteratorパターンを使う意義
 Iteratorを使うことで ,実装とは切り離して, 数え上げを行うことができる.
