@@ -6,7 +6,7 @@ Java言語で学ぶデザインパターン入門のコードをまとめたり,
 | ---- | ---- | ---- |
 | 1 | Iteratorパターン | ch01 |
 | 2 | Adapterパターン | ch02 |
-| 3 | パターン | ch03 |
+| 3 | Template Methodパターン | ch03 |
 | 4 | Factory Methodパターン | ch04 |
 | 5 | パターン | ch05 |
 | 6 | パターン | ch06 |
@@ -16,7 +16,7 @@ Java言語で学ぶデザインパターン入門のコードをまとめたり,
 | 10 | パターン | ch10 |
 | 11 | Compositeパターン | ch11 |
 | 12 | Decoratorパターン | ch12 |
-| 13 | Factory Methodパターン | ch13 |
+| 13 | Visitorパターン | ch13 |
 | 14 | パターン | ch14 |
 | 15 | パターン | ch15 |
 | 16 | パターン | ch16 |
