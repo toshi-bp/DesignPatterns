@@ -13,7 +13,7 @@ Java言語で学ぶデザインパターン入門のコードをまとめたり,
 | 7 | パターン | ch07 |
 | 8 | パターン | ch08 |
 | 9 | Bridgeパターン | ch09 |
-| 10 | パターン | ch10 |
+| 10 | Strategyパターン | ch10 |
 | 11 | Compositeパターン | ch11 |
 | 12 | Decoratorパターン | ch12 |
 | 13 | Visitorパターン | ch13 |
