@@ -8,7 +8,7 @@ Java言語で学ぶデザインパターン入門のコードをまとめたり,
 | 2 | Adapterパターン | ch02 |
 | 3 | Template Methodパターン | ch03 |
 | 4 | Factory Methodパターン | ch04 |
-| 5 | パターン | ch05 |
+| 5 | Singletonパターン | ch05 |
 | 6 | パターン | ch06 |
 | 7 | パターン | ch07 |
 | 8 | パターン | ch08 |
