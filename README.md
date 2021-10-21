@@ -9,16 +9,16 @@ Java言語で学ぶデザインパターン入門のコードをまとめたり,
 | 3 | Template Methodパターン | ch03 |
 | 4 | Factory Methodパターン | ch04 |
 | 5 | Singletonパターン | ch05 |
-| 6 | パターン | ch06 |
-| 7 | パターン | ch07 |
-| 8 | パターン | ch08 |
+| 6 | Prototypeパターン | ch06 |
+| 7 | Builderパターン | ch07 |
+| 8 | Abstract Factoryパターン | ch08 |
 | 9 | Bridgeパターン | ch09 |
 | 10 | Strategyパターン | ch10 |
 | 11 | Compositeパターン | ch11 |
 | 12 | Decoratorパターン | ch12 |
 | 13 | Visitorパターン | ch13 |
 | 14 | パターン | ch14 |
-| 15 | パターン | ch15 |
+| 15 | Facadeパターン | ch15 |
 | 16 | パターン | ch16 |
 | 17 | パターン | ch17 |
 | 18 | パターン | ch18 |
