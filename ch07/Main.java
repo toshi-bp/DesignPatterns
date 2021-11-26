@@ -1,4 +1,5 @@
 package ch07;
+import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +19,13 @@ public class Main {
             director.construct();
             String filename = htmlbuilder.getResult();
             System.out.println(filename + "が作成されました");
-        } else {
+        } else if (args[0].equals("frame")) {
+            FrameBuilder framebuilder = new FrameBuilder();
+            Director director = new Director(framebuilder);
+            director.construct();
+            JFrame frame = framebuilder.getResult();
+            frame.setVisible(true);
+        }else {
             usage();
             System.exit(0);
         }
