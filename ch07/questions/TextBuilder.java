@@ -1,6 +1,6 @@
-package ch07;
+package ch07.questions;
 
-public class TextBuilder extends Builder{
+public class TextBuilder implements Builder{
     private StringBuffer buffer = new StringBuffer();
     public void makeTitle(String title) {
         buffer.append("============================\n");

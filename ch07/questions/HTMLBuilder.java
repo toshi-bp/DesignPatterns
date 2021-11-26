@@ -1,8 +1,8 @@
-package ch07;
+package ch07.questions;
 
 import java.io.*;
 
-public class HTMLBuilder extends Builder {
+public class HTMLBuilder implements Builder{
     private String filename;
     private PrintWriter writer;
     public void makeTitle(String title) {

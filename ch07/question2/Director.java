@@ -1,4 +1,4 @@
-package ch07;
+package ch07.question2;
 
 public class Director {
     private Builder builder;
