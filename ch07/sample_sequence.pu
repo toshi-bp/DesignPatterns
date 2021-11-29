@@ -1,0 +1,32 @@
+@startuml
+participant Main
+participant Director
+participant TextBuilder
+activate Main
+create TextBuilder
+Main -> TextBuilder: new
+Main -> Director: construct
+activate Director
+Director -> TextBuilder: makeTitle
+activate TextBuilder
+Director <-- TextBuilder
+deactivate TextBuilder
+Director -> TextBuilder: makeString
+activate TextBuilder
+Director <-- TextBuilder
+deactivate TextBuilder
+Director -> TextBuilder: makeItems
+activate TextBuilder
+Director <-- TextBuilder
+deactivate TextBuilder
+Director -> TextBuilder: close
+activate TextBuilder
+Director <-- TextBuilder
+deactivate TextBuilder
+Main <-- Director
+deactivate Director
+Main -> TextBuilder : getResult
+activate TextBuilder
+Main <-- TextBuilder
+deactivate TextBuilder
+@enduml
