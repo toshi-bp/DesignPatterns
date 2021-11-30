@@ -3,24 +3,20 @@ package ch07;
 public class Director {
     private Builder builder;
     public Director(Builder builder) {
-        /**
-         * Builderのサブクラスのインスタンスが与えられるので
-         * builderフィールドに保持しておく
-         */
         this.builder = builder;
     }
     public void construct() {
         builder.makeTitle("Greeting");
-        builder.makeString("朝から昼にかけて");
+        builder.makeString("From morning to noon");
         builder.makeItems(new String[] {
-            "おはようございます",
-            "こんにちは",
+            "Good morning",
+            "Hello",
         });
-        builder.makeString("夜に");
+        builder.makeString("At night");
         builder.makeItems(new String[] {
-            "こんばんは",
-            "おやすみなさい",
-            "さようなら",
+            "Good evening",
+            "Good night",
+            "Good bye",
         });
         builder.close();
     }
