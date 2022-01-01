@@ -29,6 +29,13 @@ public class Main {
         trayyahoo.add(jp_yahoo);
 
         Tray traysearch = factory.createTray("サーチエンジン");
-        // 続きを書くよ
+        traysearch.add(trayyahoo);
+        traysearch.add(excite);
+        traysearch.add(google);
+        
+        Page page = factory.createPage("LinkPage", "結城 浩");
+        page.add(traynews);
+        page.add(traysearch);
+        page.output();
     }
 }

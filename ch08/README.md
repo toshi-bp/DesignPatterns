@@ -66,7 +66,14 @@
   - **このクラスでは, 具体的な部品・製品・工場を一切利用していない**
   - 具体的な工場のクラス名はコマンドラインから指定
   - 入力後, `Link`, `Tray`を作り, 作成した`Tray`の中に`Link`や`Tray`を入れ, 最後に`Page`を作って, `output`を行う
-- `ListFactory`クラスでは
+- `ListFactory`クラスでは`Factory`クラスの抽象メソッド`createLink`, `createTray`, `createPage`を実装している
+  - ここでは単に`ListLink`, `ListTray`, `ListPage`を`new`している
+  - `Prototype`パターンを使って`clone`を行う場合もあるかもしれない
+- `ListLink`クラスは`Link`クラスのサブクラスである
+  - スーパークラスで抽象メソッドだった`makeHTML`の実装を行っている
+- `ListTray`クラスは`Tray`クラスのサブクラスである
+  - このクラスでも`makeHTML`の実装を行っている
+  - `tray`フィールドの中には, HTML として出力すべき`Item`達が集められている
 
 # 登場人物
 
