@@ -7,7 +7,7 @@ public class Main {
         bookShelf.appendBook(new Book("my hero academia"));
         bookShelf.appendBook(new Book("demon slayer"));
         bookShelf.appendBook(new Book("jujutsu kaisen"));
-        bookShelf.appendBook(new Book("dragon ball"));
+        bookShelf.appendBook(new Book("bleach"));
         bookShelf.appendBook(new Book("one piece"));
         bookShelf.appendBook(new Book("dr.stone"));
 
