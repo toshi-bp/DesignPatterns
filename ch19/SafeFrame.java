@@ -49,8 +49,43 @@ public class SafeFrame extends Frame implements ActionListener, Context{
         buttonExit.addActionListener(this);
     }
     // ボタンが押されたらここに来る
+    public void actionPerformed(ActionEvent e) {
+        System.out.println(e.toString());
+        if (e.getSource() == buttonUse) {
+            state.doUse(this);
+        } else if (e.getSource() == buttonAlarm) {
+            state.doAlarm(this);
+        } else if (e.getSource() == buttonPhone) {
+            state.doPhone(this);
+        } else if (e.getSource() == buttonExit) {
+            System.exit(0);
+        } else {
+            System.out.println("?");
+        }
+    }
     // 時刻の設定
+    public void setClock(int hour) {
+        String clockstring = "現在時刻は";
+        if (hour < 10) {
+            clockstring += "0" + hour + ":00";
+        } else {
+            clockstring += hour + ":00";
+        }
+        System.out.println(clockstring);
+        textClock.setText(clockstring);
+        state.doClock(this, hour);
+    }
     // 状態変化
+    public void changeState(State state) {
+        System.out.println(this.state + "から" + state + "へ状態が変化しました");
+        this.state = state;
+    }
     // 警備センター呼び出し
+    public void callSecurityCenter(String msg) {
+        textScreen.append("call! " + msg + "\n");
+    }
     // 警備センター記録
+    public void recordLog(String msg) {
+        textScreen.append("record ... " + msg + "\n");
+    }
 }
