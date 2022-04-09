@@ -13,10 +13,10 @@ public class PageMaker {
             String username = mailprop.getProperty(mailaddr);
             HtmlWriter writer = new HtmlWriter(new FileWriter(filename));
             writer.title("Welcome to " + username + "'s page!");
-            writer.paragraph("メール待ってます");
+            writer.paragraph("I'l wait your mail.");
             writer.mailto(mailaddr, username);
             writer.close();
-            System.out.println(filename + "is created for " + mailaddr + " (" + username + ")");
+            System.out.println(filename + " is created for " + mailaddr + " (" + username + ")");
         } catch (IOException e) {
             e.printStackTrace();;
         }
